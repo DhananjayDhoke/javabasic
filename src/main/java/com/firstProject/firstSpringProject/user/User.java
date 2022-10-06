@@ -1,11 +1,13 @@
 package com.firstProject.firstSpringProject.user;
 
-
+import jakarta.validation.constraints.Size;
 
 public class User {
   
 	private int id;
 	private int idBook;
+	
+	@Size(min=2)
 	private String firstName;
 	private String lastName;
 	public User(int id, int idBook, String firstName, String lastName) {
